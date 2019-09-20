@@ -102,11 +102,11 @@ p{
     font-size: 4em; 
 }
 .container a i{
-    font-size: 2em;
+    font-size: 4em;
 }
 
 .show-desktop{
-    margin: 1em;
+    
     color: #0AC693;
 }
 
@@ -278,8 +278,9 @@ footer .social-links {
     
 }
 
-.menu li:last-child a {
-    color: red;
+.menu li a:hover {
+
+    color: rgb(253, 76, 76);
 }
 
 /* Pesonalizando estilo para tablets*/
