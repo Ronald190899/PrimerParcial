@@ -335,7 +335,31 @@ footer .social-links {
 
        /*TODO: FALTA CSS */
 
+       .container {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1440px;
+    }
 
+    .about .container{
+        
+        width: 80%;
+        max-width: 1440px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 50px 1fr;
+        grid-column-gap: 150px;
+        grid-row-gap: 40px;
+  }
+    .about h2 { 
+        grid-area: 1 / 1 / 2 / 3; 
+    }
+    .about .bio-info { 
+        grid-area: 2 / 1 / 3 / 2;
+     }
+    .about .contact {
+         grid-area: 2 / 2 / 3 / 3; 
+        }
 
 }
 
