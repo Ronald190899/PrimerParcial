@@ -35,6 +35,15 @@ p{
     font-size: 0.75em;
     padding: 1rem;
     line-height: 25px;
+    
+}
+
+.green-area p{
+    text-align: justify;
+}                           /*justificando el texto de green area y el about*/
+
+.about .container p{
+    text-align: justify;
 }
 
 .logo {
@@ -115,13 +124,6 @@ p{
 }
  
 
-.green-area .container ul{
-
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: row wrap;
-    margin-left: 60px;
-}
 
 
 
@@ -340,6 +342,13 @@ footer .social-links {
         display: flex;
         margin-top: 1em;
     }
+.green-area .container ul{
+
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    margin-left: 60px;
+}
 
 
 
