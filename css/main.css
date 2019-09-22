@@ -144,7 +144,7 @@ p{
 
 .post ul li {
     min-height: 300px;
-    max-width: 270px;
+    max-width: 300px;
     margin: 2rem auto;
 }
 
@@ -354,11 +354,7 @@ footer .social-links {
 
        /*TODO: FALTA CSS */
 
-       .container {
-        width: 80%;
-        margin: 0 auto;
-        max-width: 1024px;
-    }
+       
     .green-area .container ul{
 
         display: flex;
@@ -367,6 +363,11 @@ footer .social-links {
         margin-left: 60px;
     }
 
+    .post ul li {
+        min-height: 300px;
+        max-width: 300px;
+        margin: 2rem auto;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
