@@ -343,29 +343,38 @@ footer .social-links {
         margin-top: 1em;
     }
 
+    .green-area .container ul{
 
-
-
-
+        display: flex;
+        justify-content: flex-start; /*ajustando con flex para que se acoplen los articles uno sobre otro*/
+        flex-flow: row wrap;
+        margin-left: 30px;
+    }
+    
     /*TODO: FALTA CSS */
 } 
 
 @media only screen and (min-width: 1024px) {
 
        /*TODO: FALTA CSS */
-
-       
-    .green-area .container ul{
-
-        display: flex;
-        justify-content: flex-start;
-        flex-flow: row wrap;
-        margin-left: 60px;
+       .about .container{
+        
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  /*generando grid para crear 2 columnas en el About*/
+        grid-template-rows: 50px 1fr;
+        grid-column-gap: 150px;
+        grid-row-gap: 40px;
+        
+       }
+       .about h2 { 
+        grid-area: 1 / 1 / 2 / 3;  /*asignando el espacios bidimensionales al h2*/
     }
-
+       
+   
     .post ul li {
         min-height: 300px;
-        max-width: 300px;
+        max-width: 300px; /*para que las imagenes se ajusten en esta resolucion ya que mandaba el ultimmo article abajo en una resolcion de 1080*720*/
         margin: 2rem auto;
     }
 }
@@ -383,8 +392,7 @@ footer .social-links {
     
     .about .container{
         
-        width: 80%;
-        max-width: 1440px;
+        
         display: grid;
         grid-template-columns: repeat(2, 1fr);  /*generando grid para crear 2 columnas en el About*/
         grid-template-rows: 50px 1fr;
@@ -396,10 +404,5 @@ footer .social-links {
     .about h2 { 
         grid-area: 1 / 1 / 2 / 3;  /*asignando el espacios bidimensionales al h2*/
     }
-    .about .bio-info { 
-        grid-area: 2 / 1 / 3 / 2;/*asignando el espacios bidimensionales al bio info*/
-     }
-    .about .contact {
-         grid-area: 2 / 2 / 3 / 3; /*asignando el espacios bidimensionales al formulario*/
-        }
+    
 }
