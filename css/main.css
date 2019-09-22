@@ -87,7 +87,7 @@ p{
     padding: 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center;/*poner al centro los iconos de git y twitter que se modificaron*/
     padding: 0.4em;
 }
 
@@ -98,22 +98,31 @@ p{
 
 .social-links li a i{
     display: flex;
-    margin: 0 10px;
-    font-size: 4em; 
+    margin: 0 20px;         /*ajustando el tamaño de los iconos de git y twitter*/
+    font-size: 5em; 
 }
-.container a i{
+
+.fa-arrow-circle-down{
+    color: #0AC693;  /*Ajustando tamaño del icono de flecha y cambiando su color*/
     font-size: 4em;
-}
 
-.show-desktop{
-    
-    color: #0AC693;
+    padding: 0.5em;
+    margin-bottom: 0.8em;
 }
-
 
 .green-area {
     background-color: #0AC693; 
 }
+ 
+
+.green-area .container ul{
+
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    margin-left: 60px;
+}
+
 
 
 .post {
@@ -143,7 +152,13 @@ p{
     background-color: #ffffff;
     text-align: left;
     padding-bottom: 2em;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+
+
 
 .post article img{
     height: 150px;
@@ -198,7 +213,8 @@ p{
     flex-direction: column;
     text-align: left;
     padding: 0px 1em;
-    margin-bottom: 15px;
+    margin-bottom: 15px;/*creando un margen en la parte de abajo del boton "contactar"*/
+
 }
 
 .contact * + * {
@@ -247,8 +263,8 @@ footer{
 }
 
 footer .social-links {
-    margin: 0;
-    padding: 0;
+   padding-top: 2em;
+   
 }
 
 .menu {
@@ -280,7 +296,7 @@ footer .social-links {
 
 .menu li a:hover {
 
-    color: rgb(253, 76, 76);
+    color: rgb(253, 76, 76);  /*creando un hover de fuentes color rojo palido para el menu del header*/
 }
 
 /* Pesonalizando estilo para tablets*/
@@ -338,18 +354,22 @@ footer .social-links {
        .container {
         width: 80%;
         margin: 0 auto;
-        max-width: 1440px;
+        max-width: 1024px;
     }
 
+
+    
     .about .container{
         
         width: 80%;
-        max-width: 1440px;
+        max-width: 1024px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 50px 1fr;
         grid-column-gap: 150px;
         grid-row-gap: 40px;
+        
+
   }
     .about h2 { 
         grid-area: 1 / 1 / 2 / 3; 
@@ -360,6 +380,8 @@ footer .social-links {
     .about .contact {
          grid-area: 2 / 2 / 3 / 3; 
         }
+
+      
 
 }
 
@@ -372,23 +394,27 @@ footer .social-links {
         max-width: 1440px;
     }
 
+
+    
     .about .container{
         
         width: 80%;
         max-width: 1440px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);  /*generando grid para crear 2 columnas en el About*/
         grid-template-rows: 50px 1fr;
         grid-column-gap: 150px;
         grid-row-gap: 40px;
+        
+
   }
     .about h2 { 
-        grid-area: 1 / 1 / 2 / 3; 
+        grid-area: 1 / 1 / 2 / 3;  /*asignando el espacios bidimensionales al h2*/
     }
     .about .bio-info { 
-        grid-area: 2 / 1 / 3 / 2;
+        grid-area: 2 / 1 / 3 / 2;/*asignando el espacios bidimensionales al bio info*/
      }
     .about .contact {
-         grid-area: 2 / 2 / 3 / 3; 
+         grid-area: 2 / 2 / 3 / 3; /*asignando el espacios bidimensionales al formulario*/
         }
 }
